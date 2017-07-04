@@ -84,7 +84,6 @@ export class FormComponent implements OnChanges {
     if (changes.actions) {
       this.setActions();
     }
-    console.info('scheme1', this.schema)
 
     if (this.schema && !this.schema.type) {
       this.schema.type = 'object';
@@ -104,7 +103,6 @@ export class FormComponent implements OnChanges {
       this.cdr.detectChanges();
     }
 
-    console.info('scheme2', this.schema)
   }
 
   private setValidators() {

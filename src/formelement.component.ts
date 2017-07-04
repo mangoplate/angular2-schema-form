@@ -22,6 +22,9 @@ import {
          class="widget form-group"
          [class.has-error]="!control.valid"
          [class.has-success]="control.valid">
+      <label [attr.for]="id" class="horizontal control-label">
+        {{ formProperty.schema.title || formProperty.schema.format }}
+      </label>
       <sf-widget-chooser
         (widgetInstanciated)="onWidgetInstanciated($event)"
         [widgetInfo]="formProperty.schema.widget">

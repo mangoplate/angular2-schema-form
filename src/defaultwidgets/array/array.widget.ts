@@ -5,10 +5,6 @@ import { ArrayLayoutWidget } from '../../widget';
 @Component({
   selector: 'sf-array-widget',
   template: `<div>
-	<label [attr.for]="id" class="horizontal control-label">
-		{{ schema.title }}
-	</label>
-	<span *ngIf="schema.description" class="formHelp">{{schema.description}}</span>
 	<div *ngFor="let itemProperty of formProperty.properties; let i=index; trackBy:trackByIndex">
 		<sf-form-element [formProperty]="itemProperty"></sf-form-element>
 		<button (click)="removeItem(i)" class="btn btn-default array-remove-button">

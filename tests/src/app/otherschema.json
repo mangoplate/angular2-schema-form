@@ -1,56 +1,19 @@
 {
-  "fieldsets": [
-    {
-      "fields": [
-        "title",
-        "description"
-      ],
-      "id": "default",
-      "title": "Default"
-    },
-    {
-      "fields": [
-        "author",
-        "language"
-      ],
-      "id": "settings",
-      "title": "Settings"
-    }
-  ],
   "properties": {
-    "description": {
-      "description": "Short description",
-      "minLength": 0,
-      "title": "Summary",
+    "email": {
       "type": "string",
-      "widget": "textarea"
+      "description": "email",
+      "format": "email"
     },
-    "title": {
-      "description": "",
-      "title": "Title",
-      "type": "string"
-    },
-    "author": {
-      "description": "",
-      "title": "Author",
-      "type": "string"
-    },
-    "language": {
-      "description": "",
-      "choices": [
-        [
-          "es",
-          "Spanish"
-        ],
-        [
-          "fr",
-          "French"
-        ]
-      ],
-      "title": "Language",
+    "password": {
       "type": "string",
-      "widget": "select"
+      "description": "Password"
+    },
+    "passwordCheck": {
+      "type": "string",
+      "description": "Password (verification)",
+      "errorMessage": "Error!"
     }
   },
-  "required": ["title"]
+  "required": ["email", "password", "passwordCheck"]
 }

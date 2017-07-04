@@ -32,7 +32,6 @@ var FormComponent = (function () {
         if (changes.actions) {
             this.setActions();
         }
-        console.info('scheme1', this.schema);
         if (this.schema && !this.schema.type) {
             this.schema.type = 'object';
         }
@@ -48,7 +47,6 @@ var FormComponent = (function () {
             this.rootProperty.reset(this.model, false);
             this.cdr.detectChanges();
         }
-        console.info('scheme2', this.schema);
     };
     FormComponent.prototype.setValidators = function () {
         this.validatorRegistry.clear();
