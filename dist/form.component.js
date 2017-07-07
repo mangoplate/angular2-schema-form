@@ -81,43 +81,43 @@ var FormComponent = (function () {
     FormComponent.prototype.reset = function () {
         this.rootProperty.reset(null, true);
     };
+    FormComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'sf-form',
+                    template: "<form #form=\"ngForm\"><sf-form-element\n  *ngIf=\"rootProperty\" [formProperty]=\"rootProperty\"></sf-form-element></form>",
+                    providers: [
+                        ActionRegistry,
+                        ValidatorRegistry,
+                        SchemaPreprocessor,
+                        WidgetFactory,
+                        {
+                            provide: SchemaValidatorFactory,
+                            useClass: ZSchemaValidatorFactory
+                        }, {
+                            provide: FormPropertyFactory,
+                            useFactory: useFactory,
+                            deps: [SchemaValidatorFactory, ValidatorRegistry]
+                        },
+                        TerminatorService,
+                    ]
+                },] },
+    ];
+    /** @nocollapse */
+    FormComponent.ctorParameters = function () { return [
+        { type: FormPropertyFactory, },
+        { type: ActionRegistry, },
+        { type: ValidatorRegistry, },
+        { type: ChangeDetectorRef, },
+        { type: TerminatorService, },
+    ]; };
+    FormComponent.propDecorators = {
+        'schema': [{ type: Input },],
+        'model': [{ type: Input },],
+        'errors': [{ type: Input },],
+        'actions': [{ type: Input },],
+        'validators': [{ type: Input },],
+        'onChange': [{ type: Output },],
+    };
     return FormComponent;
 }());
 export { FormComponent };
-FormComponent.decorators = [
-    { type: Component, args: [{
-                selector: 'sf-form',
-                template: "<form #form=\"ngForm\"><sf-form-element\n  *ngIf=\"rootProperty\" [formProperty]=\"rootProperty\"></sf-form-element></form>",
-                providers: [
-                    ActionRegistry,
-                    ValidatorRegistry,
-                    SchemaPreprocessor,
-                    WidgetFactory,
-                    {
-                        provide: SchemaValidatorFactory,
-                        useClass: ZSchemaValidatorFactory
-                    }, {
-                        provide: FormPropertyFactory,
-                        useFactory: useFactory,
-                        deps: [SchemaValidatorFactory, ValidatorRegistry]
-                    },
-                    TerminatorService,
-                ]
-            },] },
-];
-/** @nocollapse */
-FormComponent.ctorParameters = function () { return [
-    { type: FormPropertyFactory, },
-    { type: ActionRegistry, },
-    { type: ValidatorRegistry, },
-    { type: ChangeDetectorRef, },
-    { type: TerminatorService, },
-]; };
-FormComponent.propDecorators = {
-    'schema': [{ type: Input },],
-    'model': [{ type: Input },],
-    'errors': [{ type: Input },],
-    'actions': [{ type: Input },],
-    'validators': [{ type: Input },],
-    'onChange': [{ type: Output },],
-};

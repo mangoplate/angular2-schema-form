@@ -23,23 +23,23 @@ var WidgetChooserComponent = (function () {
         this.widgetInstance = this.ref.instance;
         this.cdr.detectChanges();
     };
+    WidgetChooserComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'sf-widget-chooser',
+                    template: "<div #target></div>",
+                },] },
+    ];
+    /** @nocollapse */
+    WidgetChooserComponent.ctorParameters = function () { return [
+        { type: WidgetFactory, },
+        { type: ChangeDetectorRef, },
+        { type: TerminatorService, },
+    ]; };
+    WidgetChooserComponent.propDecorators = {
+        'widgetInfo': [{ type: Input },],
+        'widgetInstanciated': [{ type: Output },],
+        'container': [{ type: ViewChild, args: ['target', { read: ViewContainerRef },] },],
+    };
     return WidgetChooserComponent;
 }());
 export { WidgetChooserComponent };
-WidgetChooserComponent.decorators = [
-    { type: Component, args: [{
-                selector: 'sf-widget-chooser',
-                template: "<div #target></div>",
-            },] },
-];
-/** @nocollapse */
-WidgetChooserComponent.ctorParameters = function () { return [
-    { type: WidgetFactory, },
-    { type: ChangeDetectorRef, },
-    { type: TerminatorService, },
-]; };
-WidgetChooserComponent.propDecorators = {
-    'widgetInfo': [{ type: Input },],
-    'widgetInstanciated': [{ type: Output },],
-    'container': [{ type: ViewChild, args: ['target', { read: ViewContainerRef },] },],
-};

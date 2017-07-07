@@ -15,14 +15,14 @@ var RadioWidget = (function (_super) {
     function RadioWidget() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
+    RadioWidget.decorators = [
+        { type: Component, args: [{
+                    selector: 'sf-radio-widget',
+                    template: "<div>\n\t<label>{{schema.title}}</label>\n    <span *ngIf=\"schema.description\" class=\"formHelp\">{{schema.description}}</span>\n\t<div *ngFor=\"let option of schema.oneOf\" class=\"radio\">\n\t\t<label class=\"horizontal control-label\">\n\t\t\t<input [formControl]=\"control\" [attr.name]=\"name\" value=\"{{option.enum[0]}}\" type=\"radio\"  [attr.disabled]=\"schema.readOnly\">\n\t\t\t{{option.description}}\n\t\t</label>\n\t</div>\n\t<input *ngIf=\"schema.readOnly\" [attr.name]=\"name\" type=\"hidden\" [formControl]=\"control\">\n</div>"
+                },] },
+    ];
+    /** @nocollapse */
+    RadioWidget.ctorParameters = function () { return []; };
     return RadioWidget;
 }(ControlWidget));
 export { RadioWidget };
-RadioWidget.decorators = [
-    { type: Component, args: [{
-                selector: 'sf-radio-widget',
-                template: "<div>\n\t<label>{{schema.title}}</label>\n    <span *ngIf=\"schema.description\" class=\"formHelp\">{{schema.description}}</span>\n\t<div *ngFor=\"let option of schema.oneOf\" class=\"radio\">\n\t\t<label class=\"horizontal control-label\">\n\t\t\t<input [formControl]=\"control\" [attr.name]=\"name\" value=\"{{option.enum[0]}}\" type=\"radio\"  [attr.disabled]=\"schema.readOnly\">\n\t\t\t{{option.description}}\n\t\t</label>\n\t</div>\n\t<input *ngIf=\"schema.readOnly\" [attr.name]=\"name\" type=\"hidden\" [formControl]=\"control\">\n</div>"
-            },] },
-];
-/** @nocollapse */
-RadioWidget.ctorParameters = function () { return []; };

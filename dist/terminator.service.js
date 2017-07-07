@@ -7,11 +7,11 @@ var TerminatorService = (function () {
     TerminatorService.prototype.destroy = function () {
         this.onDestroy.next(true);
     };
+    TerminatorService.decorators = [
+        { type: Injectable },
+    ];
+    /** @nocollapse */
+    TerminatorService.ctorParameters = function () { return []; };
     return TerminatorService;
 }());
 export { TerminatorService };
-TerminatorService.decorators = [
-    { type: Injectable },
-];
-/** @nocollapse */
-TerminatorService.ctorParameters = function () { return []; };

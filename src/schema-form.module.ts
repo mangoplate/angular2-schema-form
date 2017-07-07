@@ -78,21 +78,21 @@ import { SchemaValidatorFactory, ZSchemaValidatorFactory } from './schemavalidat
   ]
 })
 export class SchemaFormModule {
-
-  static forRoot(): ModuleWithProviders {
-    return {
-      ngModule: SchemaFormModule,
-      providers: [
-        {
-          provide: WidgetRegistry,
-          useClass: DefaultWidgetRegistry
-        },
-        {
-          provide: SchemaValidatorFactory,
-          useClass: ZSchemaValidatorFactory
-        }
-      ]
-    }
-  }
+  //
+  // static forRoot(): ModuleWithProviders {
+  //   return {
+  //     ngModule: SchemaFormModule,
+  //     providers: [
+  //       {
+  //         provide: WidgetRegistry,
+  //         useClass: DefaultWidgetRegistry
+  //       },
+  //       {
+  //         provide: SchemaValidatorFactory,
+  //         useClass: ZSchemaValidatorFactory
+  //       }
+  //     ]
+  //   }
+  // }
 
 }

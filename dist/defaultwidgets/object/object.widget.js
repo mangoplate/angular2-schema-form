@@ -15,14 +15,14 @@ var ObjectWidget = (function (_super) {
     function ObjectWidget() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
+    ObjectWidget.decorators = [
+        { type: Component, args: [{
+                    selector: 'sf-form-object',
+                    template: "<fieldset *ngFor=\"let fieldset of formProperty.schema.fieldsets\">\n\t<legend *ngIf=\"fieldset.title\">{{fieldset.title}}</legend>\n\t<div *ngFor=\"let fieldId of fieldset.fields\">\n\t\t<sf-form-element [formProperty]=\"formProperty.getProperty(fieldId)\"></sf-form-element>\n\t</div>\n</fieldset>"
+                },] },
+    ];
+    /** @nocollapse */
+    ObjectWidget.ctorParameters = function () { return []; };
     return ObjectWidget;
 }(ObjectLayoutWidget));
 export { ObjectWidget };
-ObjectWidget.decorators = [
-    { type: Component, args: [{
-                selector: 'sf-form-object',
-                template: "<fieldset *ngFor=\"let fieldset of formProperty.schema.fieldsets\">\n\t<legend *ngIf=\"fieldset.title\">{{fieldset.title}}</legend>\n\t<div *ngFor=\"let fieldId of fieldset.fields\">\n\t\t<sf-form-element [formProperty]=\"formProperty.getProperty(fieldId)\"></sf-form-element>\n\t</div>\n</fieldset>"
-            },] },
-];
-/** @nocollapse */
-ObjectWidget.ctorParameters = function () { return []; };

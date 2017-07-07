@@ -36,20 +36,21 @@
     "Ramon Navarro Bosch <ramon.nb@gmail.com>"
   ],
   "dependencies": {
-    "@angular/common": "^4.2.5",
-    "@angular/compiler": "^4.2.5",
-    "@angular/core": "^4.2.5",
-    "@angular/forms": "^4.2.5",
-    "@angular/http": "^4.2.5",
-    "@angular/platform-browser": "^4.2.5",
-    "body-parser": "^1.15.1",
+    "@angular/common": "^4.0.3",
+    "@angular/compiler": "^4.0.3",
+    "@angular/core": "^4.0.3",
+    "@angular/forms": "^4.0.3",
+    "@angular/http": "^4.0.3",
+    "@angular/platform-browser": "^4.0.3",
+    "@angular/platform-browser-dynamic": "^4.0.3",
+    "body-parser": "^1.17.1",
     "core-js": "^2.4.1",
     "methods": "^1.1.2",
-    "raw-loader": "0.5.1",
-    "rxjs": "^5.4.2",
+    "raw-loader": "^0.5.1",
+    "rxjs": "^5.1.0",
     "typescript": "^2.2.2",
-    "z-schema": "^3.17.0",
-    "zone.js": "^0.7.8"
+    "z-schema": "^3.18.2",
+    "zone.js": "^0.7.6"
   },
   "peerDependencies": {
     "@angular/common": "^4.0.3",
