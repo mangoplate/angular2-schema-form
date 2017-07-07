@@ -5,6 +5,7 @@ export { WidgetRegistry } from './widgetregistry';
 export { Validator } from './model/validator';
 export { TerminatorService } from './terminator.service';
 export { errorGenerator } from './errorGenerator';
+export { SchemaValidatorFactory, ZSchemaValidatorFactory } from './schemavalidatorfactory';
 
 export {
     Widget,
