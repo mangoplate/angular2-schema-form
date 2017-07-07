@@ -15,14 +15,14 @@ var RangeWidget = (function (_super) {
     function RangeWidget() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    RangeWidget.decorators = [
-        { type: Component, args: [{
-                    selector: 'sf-range-widget',
-                    template: "<div>\n\t<label [attr.for]=\"id\" class=\"horizontal control-label\">\n\t\t{{ schema.title }}\n\t</label>\n    <span *ngIf=\"schema.description\" class=\"formHelp\">{{schema.description}}</span>\t\n\t<input [name]=\"name\" class=\"text-widget range-widget\" [attr.id]=\"id\"\n\t[formControl]=\"control\" [attr.type]=\"'range'\" [attr.min]=\"schema.minimum\" [attr.max]=\"schema.maximum\" [attr.disabled]=\"schema.readOnly?true:null\" >\n\t<input *ngIf=\"schema.readOnly\" [attr.name]=\"name\" type=\"hidden\">\n</div>"
-                },] },
-    ];
-    /** @nocollapse */
-    RangeWidget.ctorParameters = function () { return []; };
     return RangeWidget;
 }(ControlWidget));
 export { RangeWidget };
+RangeWidget.decorators = [
+    { type: Component, args: [{
+                selector: 'sf-range-widget',
+                template: "<div>\n\t<label [attr.for]=\"id\" class=\"horizontal control-label\">\n\t\t{{ schema.title }}\n\t</label>\n    <span *ngIf=\"schema.description\" class=\"formHelp\">{{schema.description}}</span>\t\n\t<input [name]=\"name\" class=\"text-widget range-widget\" [attr.id]=\"id\"\n\t[formControl]=\"control\" [attr.type]=\"'range'\" [attr.min]=\"schema.minimum\" [attr.max]=\"schema.maximum\" [attr.disabled]=\"schema.readOnly?true:null\" >\n\t<input *ngIf=\"schema.readOnly\" [attr.name]=\"name\" type=\"hidden\">\n</div>"
+            },] },
+];
+/** @nocollapse */
+RangeWidget.ctorParameters = function () { return []; };

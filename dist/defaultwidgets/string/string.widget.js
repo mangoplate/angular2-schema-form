@@ -23,14 +23,14 @@ var StringWidget = (function (_super) {
             return this.schema.widget.id;
         }
     };
-    StringWidget.decorators = [
-        { type: Component, args: [{
-                    selector: 'sf-string-widget',
-                    template: "<div>\n    <label [attr.for]=\"id\" class=\"horizontal control-label\">\n    \t{{ schema.title }}\n    </label>\n    <span *ngIf=\"schema.description\" class=\"formHelp\">{{schema.description}}</span>\n    <input [name]=\"name\" [attr.readonly]=\"(schema.widget.id!=='color') && schema.readOnly?true:null\"  class=\"text-widget.id textline-widget form-control\" [attr.type]=\"this.getInputType()\" [attr.id]=\"id\"  [formControl]=\"control\" [attr.placeholder]=\"schema.placeholder\" [attr.disabled]=\"(schema.widget.id=='color' && schema.readOnly)?true:null\">\n    <input *ngIf=\"(schema.widget.id==='color' && schema.readOnly)\" [attr.name]=\"name\" type=\"hidden\" [formControl]=\"control\">\n  </div>"
-                },] },
-    ];
-    /** @nocollapse */
-    StringWidget.ctorParameters = function () { return []; };
     return StringWidget;
 }(ControlWidget));
 export { StringWidget };
+StringWidget.decorators = [
+    { type: Component, args: [{
+                selector: 'sf-string-widget',
+                template: "<div>\n    <label [attr.for]=\"id\" class=\"horizontal control-label\">\n    \t{{ schema.title }}\n    </label>\n    <span *ngIf=\"schema.description\" class=\"formHelp\">{{schema.description}}</span>\n    <input [name]=\"name\" [attr.readonly]=\"(schema.widget.id!=='color') && schema.readOnly?true:null\"  class=\"text-widget.id textline-widget form-control\" [attr.type]=\"this.getInputType()\" [attr.id]=\"id\"  [formControl]=\"control\" [attr.placeholder]=\"schema.placeholder\" [attr.disabled]=\"(schema.widget.id=='color' && schema.readOnly)?true:null\">\n    <input *ngIf=\"(schema.widget.id==='color' && schema.readOnly)\" [attr.name]=\"name\" type=\"hidden\" [formControl]=\"control\">\n  </div>"
+            },] },
+];
+/** @nocollapse */
+StringWidget.ctorParameters = function () { return []; };

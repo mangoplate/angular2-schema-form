@@ -15,14 +15,14 @@ var SelectWidget = (function (_super) {
     function SelectWidget() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    SelectWidget.decorators = [
-        { type: Component, args: [{
-                    selector: 'sf-select-widget',
-                    template: "<div>\n\t<label [attr.for]=\"id\" class=\"horizontal control-label\">\n\t\t{{ schema.title }}\n\t</label>\n    <span *ngIf=\"schema.description\" class=\"formHelp\">{{schema.description}}</span>\n\t<select [formControl]=\"control\" [attr.name]=\"name\" [attr.disabled]=\"schema.readOnly\" class=\"form-control\">\n\t<option *ngFor=\"let option of schema.oneOf\" [ngValue]=\"option.enum[0]\" >{{option.description}}</option>\n\t</select>\n\t<input *ngIf=\"schema.readOnly\" [attr.name]=\"name\" type=\"hidden\" [formControl]=\"control\">\n</div>"
-                },] },
-    ];
-    /** @nocollapse */
-    SelectWidget.ctorParameters = function () { return []; };
     return SelectWidget;
 }(ControlWidget));
 export { SelectWidget };
+SelectWidget.decorators = [
+    { type: Component, args: [{
+                selector: 'sf-select-widget',
+                template: "<div>\n\t<label [attr.for]=\"id\" class=\"horizontal control-label\">\n\t\t{{ schema.title }}\n\t</label>\n    <span *ngIf=\"schema.description\" class=\"formHelp\">{{schema.description}}</span>\n\t<select [formControl]=\"control\" [attr.name]=\"name\" [attr.disabled]=\"schema.readOnly\" class=\"form-control\">\n\t<option *ngFor=\"let option of schema.oneOf\" [ngValue]=\"option.enum[0]\" >{{option.description}}</option>\n\t</select>\n\t<input *ngIf=\"schema.readOnly\" [attr.name]=\"name\" type=\"hidden\" [formControl]=\"control\">\n</div>"
+            },] },
+];
+/** @nocollapse */
+SelectWidget.ctorParameters = function () { return []; };
