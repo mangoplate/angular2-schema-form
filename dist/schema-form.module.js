@@ -9,6 +9,22 @@ import { DefaultWidget } from './default.widget';
 var SchemaFormModule = (function () {
     function SchemaFormModule() {
     }
+    //
+    // static forRoot(): ModuleWithProviders {
+    //   return {
+    //     ngModule: SchemaFormModule,
+    //     providers: [
+    //       {
+    //         provide: WidgetRegistry,
+    //         useClass: DefaultWidgetRegistry
+    //       },
+    //       {
+    //         provide: SchemaValidatorFactory,
+    //         useClass: ZSchemaValidatorFactory
+    //       }
+    //     ]
+    //   }
+    // }
     SchemaFormModule.decorators = [
         { type: NgModule, args: [{
                     imports: [CommonModule, FormsModule, ReactiveFormsModule],

@@ -5,6 +5,7 @@ export { WidgetRegistry } from './widgetregistry';
 export { Validator } from './model/validator';
 export { TerminatorService } from './terminator.service';
 export { errorGenerator } from './errorGenerator';
+export { SchemaValidatorFactory, ZSchemaValidatorFactory } from './schemavalidatorfactory';
 export { Widget, ControlWidget, ArrayLayoutWidget, ObjectLayoutWidget } from './widget';
 export { ArrayWidget, CheckboxWidget, FileWidget, IntegerWidget, ObjectWidget, RadioWidget, RangeWidget, SelectWidget, StringWidget, TextAreaWidget, DefaultWidgetRegistry } from './defaultwidgets';
 export { SchemaFormModule } from './schema-form.module';
