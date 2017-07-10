@@ -1,0 +1,494 @@
+[
+  {
+    "__symbolic": "module",
+    "version": 3,
+    "metadata": {
+      "SchemaFormModule": {
+        "__symbolic": "class",
+        "decorators": [
+          {
+            "__symbolic": "call",
+            "expression": {
+              "__symbolic": "reference",
+              "module": "@angular/core",
+              "name": "NgModule"
+            },
+            "arguments": [
+              {
+                "imports": [
+                  {
+                    "__symbolic": "reference",
+                    "module": "@angular/common",
+                    "name": "CommonModule"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "@angular/forms",
+                    "name": "FormsModule"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "@angular/forms",
+                    "name": "ReactiveFormsModule"
+                  }
+                ],
+                "declarations": [
+                  {
+                    "__symbolic": "reference",
+                    "module": "./formelement.component",
+                    "name": "FormElementComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./form.component",
+                    "name": "FormComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./widgetchooser.component",
+                    "name": "WidgetChooserComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./default.widget",
+                    "name": "DefaultWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "ArrayWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "ObjectWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "CheckboxWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "FileWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "IntegerWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "TextAreaWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "RadioWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "RangeWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "SelectWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "StringWidget"
+                  }
+                ],
+                "entryComponents": [
+                  {
+                    "__symbolic": "reference",
+                    "module": "./formelement.component",
+                    "name": "FormElementComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./form.component",
+                    "name": "FormComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./widgetchooser.component",
+                    "name": "WidgetChooserComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "ArrayWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "ObjectWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "CheckboxWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "FileWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "IntegerWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "TextAreaWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "RadioWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "RangeWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "SelectWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "StringWidget"
+                  }
+                ],
+                "exports": [
+                  {
+                    "__symbolic": "reference",
+                    "module": "./form.component",
+                    "name": "FormComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./formelement.component",
+                    "name": "FormElementComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./widgetchooser.component",
+                    "name": "WidgetChooserComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "ArrayWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "ObjectWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "CheckboxWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "FileWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "IntegerWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "TextAreaWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "RadioWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "RangeWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "SelectWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "StringWidget"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "__symbolic": "module",
+    "version": 1,
+    "metadata": {
+      "SchemaFormModule": {
+        "__symbolic": "class",
+        "decorators": [
+          {
+            "__symbolic": "call",
+            "expression": {
+              "__symbolic": "reference",
+              "module": "@angular/core",
+              "name": "NgModule"
+            },
+            "arguments": [
+              {
+                "imports": [
+                  {
+                    "__symbolic": "reference",
+                    "module": "@angular/common",
+                    "name": "CommonModule"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "@angular/forms",
+                    "name": "FormsModule"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "@angular/forms",
+                    "name": "ReactiveFormsModule"
+                  }
+                ],
+                "declarations": [
+                  {
+                    "__symbolic": "reference",
+                    "module": "./formelement.component",
+                    "name": "FormElementComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./form.component",
+                    "name": "FormComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./widgetchooser.component",
+                    "name": "WidgetChooserComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./default.widget",
+                    "name": "DefaultWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "ArrayWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "ObjectWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "CheckboxWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "FileWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "IntegerWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "TextAreaWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "RadioWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "RangeWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "SelectWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "StringWidget"
+                  }
+                ],
+                "entryComponents": [
+                  {
+                    "__symbolic": "reference",
+                    "module": "./formelement.component",
+                    "name": "FormElementComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./form.component",
+                    "name": "FormComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./widgetchooser.component",
+                    "name": "WidgetChooserComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "ArrayWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "ObjectWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "CheckboxWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "FileWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "IntegerWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "TextAreaWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "RadioWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "RangeWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "SelectWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "StringWidget"
+                  }
+                ],
+                "exports": [
+                  {
+                    "__symbolic": "reference",
+                    "module": "./form.component",
+                    "name": "FormComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./formelement.component",
+                    "name": "FormElementComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./widgetchooser.component",
+                    "name": "WidgetChooserComponent"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "ArrayWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "ObjectWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "CheckboxWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "FileWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "IntegerWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "TextAreaWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "RadioWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "RangeWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "SelectWidget"
+                  },
+                  {
+                    "__symbolic": "reference",
+                    "module": "./defaultwidgets",
+                    "name": "StringWidget"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

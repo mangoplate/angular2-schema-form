@@ -8,7 +8,6 @@ package-lock.json
 yarn.lock
 /.vscode
 release/
-*.metadata.json
 *.ngfactory.ts
 *.tgz
 mp-angular2-schema-form.iml
