@@ -123,12 +123,17 @@ export class SchemaPreprocessor {
         if (jsonSchema.properties.hasOwnProperty(fieldId)) {
           let fieldSchema = jsonSchema.properties[fieldId];
           SchemaPreprocessor.preprocess(fieldSchema, path + fieldId + '/');
+          SchemaPreprocessor.createSchemaTitle(fieldSchema, fieldId);
         }
       }
 
     } else if (jsonSchema.type === 'array') {
       SchemaPreprocessor.preprocess(jsonSchema.items, path + '*/');
     }
+  }
+
+  private static createSchemaTitle(jsonSchema, fieldId) {
+    jsonSchema.title = fieldId;
   }
 }
 

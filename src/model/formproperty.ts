@@ -30,7 +30,7 @@ export abstract class FormProperty {
     parent: PropertyGroup,
     path: string
   ) {
-    this.schemaValidator = schemaValidatorFactory.createValidatorFn(this.schema);
+    this.schemaValidator = () => [];
 
     this._parent = parent;
     if (parent) {
