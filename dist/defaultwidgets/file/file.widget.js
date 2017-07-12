@@ -15,14 +15,14 @@ var FileWidget = (function (_super) {
     function FileWidget() {
         return _super.call(this) || this;
     }
-    FileWidget.decorators = [
-        { type: Component, args: [{
-                    selector: 'sf-file-widget',
-                    template: "<div>\n\t<label [attr.for]=\"id\" class=\"horizontal control-label\">\n\t\t{{ schema.title }}\n\t</label>\n    <span *ngIf=\"schema.description\" class=\"formHelp\">{{schema.description}}</span>\n\t<input [name]=\"name\" class=\"text-widget file-widget\" [attr.id]=\"id\" [formControl]=\"control\" type=\"file\" [attr.disabled]=\"schema.readOnly?true:null\" >\n\t<input *ngIf=\"schema.readOnly\" [attr.name]=\"name\" type=\"hidden\" [formControl]=\"control\">\n</div>"
-                },] },
-    ];
-    /** @nocollapse */
-    FileWidget.ctorParameters = function () { return []; };
     return FileWidget;
 }(ControlWidget));
 export { FileWidget };
+FileWidget.decorators = [
+    { type: Component, args: [{
+                selector: 'sf-file-widget',
+                template: "<div>\n\t<input [name]=\"name\" class=\"text-widget file-widget\" [attr.id]=\"id\" [formControl]=\"control\" type=\"file\" [attr.disabled]=\"schema.readOnly?true:null\" >\n\t<input *ngIf=\"schema.readOnly\" [attr.name]=\"name\" type=\"hidden\" [formControl]=\"control\">\n</div>"
+            },] },
+];
+/** @nocollapse */
+FileWidget.ctorParameters = function () { return []; };

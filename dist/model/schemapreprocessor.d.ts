@@ -9,4 +9,5 @@ export declare class SchemaPreprocessor {
     private static normalizeRequired(jsonSchema);
     private static checkItems(jsonSchema, path);
     private static recursiveCheck(jsonSchema, path);
+    private static createSchemaTitle(jsonSchema, fieldId);
 }

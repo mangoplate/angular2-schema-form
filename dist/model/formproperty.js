@@ -24,7 +24,7 @@ var FormProperty = (function () {
         this._errorsChanges = new BehaviorSubject(null);
         this._visible = true;
         this._visibilityChanges = new BehaviorSubject(true);
-        this.schemaValidator = schemaValidatorFactory.createValidatorFn(this.schema);
+        this.schemaValidator = function () { return []; };
         this._parent = parent;
         if (parent) {
             this._root = parent.root;
