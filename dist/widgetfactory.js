@@ -10,14 +10,14 @@ var WidgetFactory = (function () {
         var componentFactory = this.resolver.resolveComponentFactory(componentClass);
         return container.createComponent(componentFactory);
     };
-    WidgetFactory.decorators = [
-        { type: Injectable },
-    ];
-    /** @nocollapse */
-    WidgetFactory.ctorParameters = function () { return [
-        { type: WidgetRegistry, },
-        { type: ComponentFactoryResolver, },
-    ]; };
     return WidgetFactory;
 }());
 export { WidgetFactory };
+WidgetFactory.decorators = [
+    { type: Injectable },
+];
+/** @nocollapse */
+WidgetFactory.ctorParameters = function () { return [
+    { type: WidgetRegistry, },
+    { type: ComponentFactoryResolver, },
+]; };

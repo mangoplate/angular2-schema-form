@@ -117,12 +117,16 @@ var SchemaPreprocessor = (function () {
                 if (jsonSchema.properties.hasOwnProperty(fieldId)) {
                     var fieldSchema = jsonSchema.properties[fieldId];
                     SchemaPreprocessor.preprocess(fieldSchema, path + fieldId + '/');
+                    SchemaPreprocessor.createSchemaTitle(fieldSchema, fieldId);
                 }
             }
         }
         else if (jsonSchema.type === 'array') {
             SchemaPreprocessor.preprocess(jsonSchema.items, path + '*/');
         }
+    };
+    SchemaPreprocessor.createSchemaTitle = function (jsonSchema, fieldId) {
+        jsonSchema.title = fieldId;
     };
     return SchemaPreprocessor;
 }());

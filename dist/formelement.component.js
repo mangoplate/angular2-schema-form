@@ -41,20 +41,20 @@ var FormElementComponent = (function () {
         this.widget.id = id;
         this.widget.control = this.control;
     };
-    FormElementComponent.counter = 0;
-    FormElementComponent.decorators = [
-        { type: Component, args: [{
-                    selector: 'sf-form-element',
-                    template: "\n    <div *ngIf=\"formProperty.visible\"\n         class=\"widget form-group\"\n         [class.has-error]=\"!control.valid\"\n         [class.has-success]=\"control.valid\">\n      <sf-widget-chooser\n        (widgetInstanciated)=\"onWidgetInstanciated($event)\"\n        [widgetInfo]=\"formProperty.schema.widget\">\n      </sf-widget-chooser>\n      <p *ngIf=\"control.errors\" class=\"help-block\">{{control.errors[0].message}}</p>\n      <button *ngFor=\"let button of buttons\" (click)=\"button.action($event)\">{{button.label}}</button>\n    </div>"
-                },] },
-    ];
-    /** @nocollapse */
-    FormElementComponent.ctorParameters = function () { return [
-        { type: ActionRegistry, },
-    ]; };
-    FormElementComponent.propDecorators = {
-        'formProperty': [{ type: Input },],
-    };
     return FormElementComponent;
 }());
 export { FormElementComponent };
+FormElementComponent.counter = 0;
+FormElementComponent.decorators = [
+    { type: Component, args: [{
+                selector: 'sf-form-element',
+                template: "\n    <div *ngIf=\"formProperty.visible\"\n         class=\"widget form-group\"\n         [class.has-error]=\"!control.valid\"\n         [class.has-success]=\"control.valid\">\n      <label [attr.for]=\"id\" class=\"horizontal control-label\">\n        {{ formProperty.schema.title || formProperty.schema.format }}\n      </label>\n      <sf-widget-chooser\n        (widgetInstanciated)=\"onWidgetInstanciated($event)\"\n        [widgetInfo]=\"formProperty.schema.widget\">\n      </sf-widget-chooser>\n      <p *ngIf=\"control.errors\" class=\"help-block\">{{control.errors[0].message}}</p>\n      <button *ngFor=\"let button of buttons\" (click)=\"button.action($event)\">{{button.label}}</button>\n    </div>"
+            },] },
+];
+/** @nocollapse */
+FormElementComponent.ctorParameters = function () { return [
+    { type: ActionRegistry, },
+]; };
+FormElementComponent.propDecorators = {
+    'formProperty': [{ type: Input },],
+};
